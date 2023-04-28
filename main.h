@@ -45,9 +45,8 @@ int (*check_prtr(char specifier))(char *, int, va_list);
 /* PRINTF FUNCTION */
 
 int _printf(const char *format, ...);
-<<<<<<< HEAD
 int print_int(va_list list);
-int print_binary(va_list list, char buffer[], int flags, int width
+int print_binary(va_list list, char buffer[], int flags, int width,
 	int precision, int length);
 int print_decimal(va_list list, char buffer[]);
 int print_octal(va_list list, char buffer[]);
@@ -62,7 +61,6 @@ int find_flag(const char *format, int *i);
 int find_length(const char *format, int *i);
 int find_precision(const char *format, int *i, va_list list);
 int find_width(const char *format, int *i, va_list list);
-=======
 
 /* STRING MANIPULATION FUNCTION */
 
