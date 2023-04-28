@@ -6,7 +6,8 @@
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_int(va_list list);
-int print_binary(va_list list, char buffer[], int flags, int width, int precision, int length);
+int print_binary(va_list list, char buffer[], int flags, int width
+	int precision, int length);
 int print_decimal(va_list list, char buffer[]);
 int print_octal(va_list list, char buffer[]);
 int print_hexadecimal(va_list list, char buffer[]);
