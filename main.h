@@ -83,6 +83,5 @@ typedef struct ptr
 	char *c;
 	int (*f)(char *, int, va_list);
 } ptr_ch;
->>>>>>> 4cbd68043455559a890e186f77f0939d389858b5
 
 #endif
