@@ -4,16 +4,16 @@
 #include "holberton.h"
 
 /**
- * print_int - prints integer
- * @i: integer to be printed
+ * print_dec - prints decimal
+ * @d: decimal to be printed
  * Return: size
  */
 
-int print_int(va_list i)
+int print_dec(va_list d)
 {
 int len, pow, j, digit, n, count, num;
 count = 0;
-n = va_arg(i, int);
+n = va_arg(d, int);
 if (n != 0)
 {
 if (n < 0)
