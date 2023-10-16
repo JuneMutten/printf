@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+<<<<<<< HEAD
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -115,3 +116,25 @@ long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif /* MAIN_H *
+=======
+
+/**
+ * struct format - Matches the conversion specifiers used with printf
+ * @id: The conversion specifier
+ * @f: Pointer to the function that matches specifier
+*/
+
+typedef struct format
+{
+	char *id;
+	int (*f)()
+} convert_if_match;
+
+int _printf(const char *format, ...);
+int _putchhar(char c);
+int print_char(va_list parameters);
+int print_string(va_list parameters);
+int print_percent(void);
+
+#endif
+>>>>>>> a92e4304fb9f2183eeff4f2b0bc3f4d9b09a546d
