@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 				count += m[j].f(args);
 				format += 2;
 			}
-			j++;
+			j--;
 		}
 	_putchar(*format);
 	count++;
