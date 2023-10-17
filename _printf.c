@@ -31,7 +31,6 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-<<<<<<< HEAD
 			print_buffer(buffer, &buff_ind);
 			flags = get_flags(format, &i);
 			width = get_width(format, &i, list);
@@ -43,14 +42,13 @@ int _printf(const char *format, ...)
 			if (printed == -1)
 				return (-1);
 			printed_chars += printed;
-=======
+	
 			if (a[j].id[0] == *format && m[j].id[i] == *(format + 1))
 			{
 				count += m[j].f(args);
 				format += 2;
 			}
 			j--;
->>>>>>> a92e4304fb9f2183eeff4f2b0bc3f4d9b09a546d
 		}
 	}
 
