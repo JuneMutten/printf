@@ -2,7 +2,6 @@
 #define our_printf
 #include <stdio.h>
 #include <stdarg.h>
->>>>>>> f2b6597360414f025995413697b93fac2d4bc9f6
 /**
  * struct specifier - struct specifier
  * @valid: the valid character.
