@@ -1,24 +1,25 @@
-#ifndef MAIN_H
-#define MAIN_H
-
+#ifndef our_printf
+#define our_printf
+#include <stdio.h>
 #include <stdarg.h>
-
+>>>>>>> f2b6597360414f025995413697b93fac2d4bc9f6
 /**
- * struct format - Matches the conversion specifiers used with printf
- * @id: The conversion specifier
- * @f: Pointer to the function that matches specifier
-*/
-
-typedef struct format
+ * struct specifier - struct specifier
+ * @valid: the valid character.
+ * @f: the functions associated.
+ *
+ */
+typedef struct specifier
 {
-	char *id;
-	int (*f)();
-} convert_if_match;
-
+	char *valid;
+	int (*f)(va_list);
+} spec;
 int _printf(const char *format, ...);
+int print_c(va_list args);
+int print_s(va_list args);
+int print_d(va_list args);
+int print_i(va_list args);
 int _putchar(char c);
-int print_char(va_list parameters);
-int print_string(va_list parameters);
-int print_percent(void);
-
+int print_percent(va_list args);
+int (*get_func(char x))(va_list args);
 #endif
