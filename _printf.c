@@ -42,13 +42,6 @@ int _printf(const char *format, ...)
 			if (printed == -1)
 				return (-1);
 			printed_chars += printed;
-	
-			if (a[j].id[0] == *format && m[j].id[i] == *(format + 1))
-			{
-				count += m[j].f(args);
-				format += 2;
-			}
-			j--;
 		}
 	}
 
