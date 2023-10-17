@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	convert_if_match a[] = {{"%s", print_string}, {"%c", print_char},
 		{"%%", print_percent}};
 
-	int i = 0, count = 0, j = 2;
+	int count = 0, j = 2;
 	va_list args;
 
 	va_start(args, format);
@@ -27,9 +27,9 @@ int _printf(const char *format, ...)
 	{
 		while (j >= 0)
 		{
-			if (a[j].id[0] == *format && m[j].id[i] == *(format + 1))
+			if (a[j].id[0] == *format && a[j].id[1] == *(format + 1))
 			{
-				count += m[j].f(args);
+				count += a[j].f(args);
 				format += 2;
 			}
 			j--;
