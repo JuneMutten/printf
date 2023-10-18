@@ -18,7 +18,10 @@ int print_c(va_list args);
 int print_s(va_list args);
 int print_d(va_list args);
 int print_i(va_list args);
+int print_p(va_list args);
+int print_R(va_list args);
 int _putchar(char c);
+int convert_to_hex(unsigned long int num);
 int print_percent(va_list args);
 int (*get_func(char x))(va_list args);
 #endif
